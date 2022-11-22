@@ -1,0 +1,559 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    max-height: 2000px;   
+    font-weight: 500;
+    
+}
+body{
+  overflow-x:hidden;
+}
+.logo{
+    width: 159px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.padding{
+    padding: 20px;
+}
+.btn{
+    background-color: #004F23;
+    color: white;
+    box-sizing: unset;
+    padding: 12px 28px;
+    border-radius: 35px 0px 35px 35px;
+    font-size: 23px;
+}
+.ab-1_btn{
+    margin-top:100px
+}
+nav.row{
+    flex-direction: row-reverse;
+    justify-content:flex-start;
+    gap: 30px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top:0;
+    padding-right:40px ;
+}
+header{
+    position: relative;
+}
+header div h1{
+  position: absolute;
+  top: 140px;
+  left: 200px;
+  font-size: 45px;
+  -webkit-text-stroke: 1px black;
+  color:transparent
+}
+nav a{
+    font-size: 20px;
+    color: black;
+}
+header section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*prosses contents*/
+.process{
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+}
+.process p{
+    color: #004F23;
+    position: absolute;
+    font-size: 25px;
+}
+.process h1{
+    position: absolute;
+    top: 32px;
+    
+}
+.process .sticky img{
+  width: 1100px;
+  height: auto;
+  transform: rotate(-25deg);
+  z-index: -99;
+  opacity: 0.1;
+  filter:saturate(2);
+  position: absolute;
+  top: 0
+}
+.pro1{
+    position: relative;
+    top:50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 150px;
+    
+    
+}
+.pro1 p:nth-child(1){
+    font-size: 142px;
+    opacity: 0.3;
+    font-family: NSimSun;
+    
+}
+.pro1 p:nth-child(2){
+    font-size: 170px;
+    opacity: 0.3;
+    font-family: NSimSun;
+}
+.pro1 p:nth-child(3){
+    font-size: 40px;
+    position:absolute;
+    top: 120px;
+    left: 100px;
+}   
+.pro1 p:nth-child(4){
+    position:absolute;
+    top:180px;
+    text-align: center;
+    
+}  
+.pro2{
+    position: relative;
+    top:50px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 390px;   
+}
+.pro2 p:nth-child(1){
+    font-size: 142px;
+    opacity: 0.3;
+    font-family: NSimSun;   
+}
+.pro2 p:nth-child(2){
+    font-size: 170px;
+    opacity: 0.3;
+    font-family: NSimSun;
+}
+.pro2 p:nth-child(3){
+    font-size: 40px;
+    position:absolute;
+    top: 120px;
+    right: -210px;
+}   
+.pro2 p:nth-child(4){
+    position:absolute;
+    top:180px;
+    text-align: center;
+    right: -250px;   
+}  
+/*trapizoid1*/
+.trapizoid1{
+    clip-path: polygon(0 0, 100% 70%, 100% 89%, 0 74%);
+    width: 100%;
+    height: 600px;
+    background-color: #88C38E;
+    z-index: -1;
+}
+.since{
+    position: relative;
+    width: 420px;
+    height: 450px;
+    background-color: white;
+    border-radius: 80px;
+    bottom:500px;
+    left : -420px;
+    box-shadow:20px 20px 50px -20px black;
+    transition:1s ease-out
+}
+.since h2{
+    position: absolute;
+    text-align: left;
+    padding-right:72px ;
+    top: 45px;
+    
+}
+.since div{
+    width: 150px;
+    height: 6px;
+    background-color: #004F23;
+    position: absolute;
+    top:110px;
+    left:50px
+}
+.since p{
+    padding: 120px 50px 30px 50px;
+    overflow: hidden;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+/*trapizoid1*/
+/*meet the family*/
+.meet{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding:50px 0px;
+    position: relative;
+    top: -450px;
+}
+.meet .meet-top{
+    text-align: center;
+}
+.meet .meet-middle,.meet .meet-bottom {
+    display: flex;
+    gap:20px;
+
+}
+.meet .meet-middle div, .meet .meet-bottom div{
+    width:388px;
+    height:388px;
+    position: relative;
+}
+.meet button{
+    position:relative;
+   bottom:70px;
+   left:50%;
+   transform: translateX(-50%);
+   background:#004F23;
+   border:none;
+   outline:none;
+   color:white;
+   padding:3px 60px 1px 60px;
+   border-radius:40px;
+ 
+}
+.meet button:hover{
+    background:#88C38E;
+    color:black
+}
+.meet .meet-middle button span,.meet .meet-bottom button span{
+    font-size: 25px;
+    font-weight: bold;
+}
+.meet .meet-middle button span.gardenist,.meet .meet-bottom button span.gardenist{
+    position: relative;
+    top:-4px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.meet .meet-middle div img,.meet .meet-bottom div img{
+    object-fit: cover;
+    width:388px;
+    height:388px;
+}
+.meet .meet-middle div:nth-child(1) img{
+  border-radius: 120px 120px 0px 120px;
+}
+.meet .meet-bottom div:nth-child(1) img{
+    border-radius: 120px 0px 120px 120px;   
+}
+.meet .meet-middle div:nth-child(2) img{
+    border-radius: 120px 120px 120px 0px;
+  }
+  .meet .meet-bottom div:nth-child(2) img{
+    border-radius:0px 120px 120px 120px;
+  }
+  .meet .meet-middle .icon,.meet .meet-bottom .icon{
+    position: absolute;
+    top:40%;
+    right:10px;
+    display:flex;
+    flex-direction: column;
+    width:50px;
+    height:calc(100% - 50%);
+    font-size: 35px;
+    gap:20px;
+    transform: translateY(-20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .meet  .icon i{
+    background:#004F23;
+    color:white;
+    width:45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:8px;
+  }
+  .meet .icon i:hover{
+    background:#88C38E;
+    color:black
+  }
+  .meet  .icon-2{
+    left:10px;
+  }
+  #flower1,#flower2{
+    position: absolute;
+    opacity:0.2;
+  }
+  #flower1{
+    top:0;
+    right:0;
+  }
+  #flower2{
+    bottom:0;
+    left:0;
+    transform: rotate(180deg);
+  }
+  /*meet the family*/
+/*before after*/
+.trapizoid2{
+    clip-path: polygon(0 69%, 100% 16%, 100% 79%, 0 89%);
+    width: 100%;
+    height: 700px;
+    background-color:#004F23;
+    z-index: -1;
+    margin-top: -350px;
+}
+.bfaf{
+    position: relative;
+    bottom: 450px;
+}
+.bfaf .before{
+    background: url(../images/before.jpg);
+    width:490px ;
+    height: 450px;
+    border-radius: 100px;   
+    position: absolute;
+    left: 230px;
+    
+}
+.bfaf .after{
+    background: url(../images/after.jpg);
+    width:480px ;
+    height: 450px;
+    border-radius: 100px;   
+    position: absolute;
+    right: 230px;
+}
+.bfaf .before p{
+    font-size: 45px;
+    padding-top:380px;
+    padding-left: 320px;
+}
+.bfaf .after p{
+    font-size: 45px;
+    padding-top:380px;
+    padding-left: 40px;
+}
+.bfaf .before div:nth-child(2){
+     width:8px;
+     height:300px;
+     background: black; 
+     position: absolute;
+     bottom:80px;
+     left:440px
+}
+.bfaf .before div:nth-child(3){
+    width:250px;
+    height:8px;
+    background: black; 
+    position: absolute;
+    bottom:40px;
+    left:50px;
+}
+.bfaf .after div:nth-child(2){
+    width:8px;
+    height:300px;
+    background: black; 
+    position: absolute;
+    bottom:80px;
+    right:420px
+}
+.bfaf .after div:nth-child(3){
+   width:260px;
+   height:8px;
+   background: black; 
+   position: absolute;
+   bottom:40px;
+   right:60px;
+}
+/*beforeafter*/
+ /*our mission*/
+.mission{
+  background:url(../images/our\ mission.jpg)no-repeat -360px 110px;
+  background-size: 2000px;
+  margin-top:150px;
+  width:100%;
+  height: 600px;
+  position: relative;
+  top:-450px;
+  z-index: -9;
+}
+.mission p {
+  position: absolute;
+  top: 290px;
+  left: 720px;
+  font-size: 22px;
+  color: #004F23;
+  font-weight: 600;
+}
+.mission h1 {
+  position: absolute;
+  top: 330px;
+  left: 500px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+ /*footer*/
+ footer{
+  width:100%;
+  height: 600px;
+  position: relative;
+  top: -850px;
+  max-height: 1px;
+}
+footer .footer1{
+  background: url(../images/footer.png)no-repeat center 150px;
+  background-size: 2150px;
+  width:100%;
+  height: 780px;
+  position: relative;
+  top: -100px;
+ 
+}
+footer .footer2{
+  width:100%;
+  position: relative;
+  top: -780px;
+}
+footer .footer2 .f-3 .f-3-a form .check{
+ display: flex;
+ padding-top:10px;
+ align-items: center;
+ justify-content: center;
+ gap:10px
+}
+footer .footer2 .f-3 .f-3-a form .check input{
+  width:20px;
+  height:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+footer .footer2 .f-3 .f-3-a form button{
+  position: relative;
+  right:30px;
+  background-color: transparent;
+  border:none;
+  font-size: 20px;
+}
+footer .footer2 .f-3 .f-3-a form .check input{
+  font-size: 100px;
+}
+footer .footer2 .f-3 .f-3-a form input[type='text']{
+  padding: 8px 8px;
+  margin:15px 0px;
+  width: 300px;
+  border-radius: 40px 0px 60px 40px;
+  border:none;
+  outline:none;
+}
+footer .footer2 .f-1-b{
+  background:#88C38E;
+  color:black;
+}
+footer .footer2 .f-1-a button,footer .footer2 .f-1-b button{
+  padding:5px 20px;
+  border-radius: 15px;
+  border:none;
+ 
+}
+footer .footer2 .f-1-b button{
+  padding:8px 22px;
+  background-color:#004F23;
+  color:white;
+  border-radius: 25px;
+  border:none;
+}
+footer .footer2 .f-3{
+position: relative;
+top:400px;
+}
+footer .footer2 .f-3 .f-3-a{
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer .footer2 .f-3{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 60px 0px 60px;
+}
+footer .footer2 .f-3 .linkk{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: absolute;
+  left: 510px;
+  gap:8px;
+  padding-top: 40px;
+}
+footer .footer2 .f-3 .linkk a{
+  text-decoration: none;
+  color: black;
+}
+footer .footer2 .f-3 .linkk h3{
+  position: absolute;
+  top: 1px;
+}
+footer .footer2 .f-3 address{
+  position: absolute;
+  left: 700px; 
+  font-style: normal;
+  padding-top: 20px;
+}
+footer .footer2 .f-3 address h3{
+  position: absolute;
+  top: -20px;
+}
+footer .hr{
+width: 100%;
+height: 1px;
+border-top:1px solid black;
+position: relative;
+top:440px;
+}
+footer .foot div:nth-child(1){
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  bottom: -450px;
+  left: 120px;
+}
+footer .foot div:nth-child(2){
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  bottom: -432px;
+  left: 1000px;
+  
+}
+/*footer*/
+/*animation*/
+

@@ -1,0 +1,72 @@
+
+.eight-heading{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.eight-heading{
+    padding:40px 20px ;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.eight-heading p:nth-child(1){
+    color: #004F23;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0px;
+}
+.section_eight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding: 20px;
+}
+.image-content .image-section{
+    display: flex;
+    gap:20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.image-content .image-section-2{
+    justify-content: flex-start;
+}
+.content-section h5{
+    padding:10px 0px;
+    margin:0px;
+}
+.stars{
+    line-height:15px;
+    padding:10px 0px;
+}
+.stars-1{
+    text-align: end;
+    padding:10px 0px;
+}
+.stars h5{
+    font-size:25px;
+    padding:8px 0px;
+}
+.stars p{
+    font-size: 16px;
+    padding:8px 0px;
+}
+.stars .star i{
+    color:gold;
+    padding:5px 0px;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    color:#004F23
+}
+.swiper-pagination-bullet{
+    background:#004F23
+}

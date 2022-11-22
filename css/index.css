@@ -1,0 +1,1024 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    overflow-x:hidden;
+}
+.logo{
+    width: 159px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.padding{
+    padding: 20px;
+}
+.btn{
+    background-color: #004F23;
+    color: white;
+    box-sizing: unset;
+    padding: 20px 28px;
+    border-radius: 35px 0px 35px 35px;
+    font-size: 50px;
+}
+.ab-1_btn{
+    margin-top:70px;
+}
+nav.row{
+    
+    flex-direction: row-reverse;
+    justify-content:flex-start;
+    gap: 30px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top:0;
+    padding-right:40px ;
+}
+header{
+    position: relative;
+}
+nav a{
+    font-size: 20px;
+    color: black;
+}
+header section video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+header section>div{
+    position: absolute;
+    width:100%;
+    height: 100vh;
+    top: 0;
+}
+header section>div>div{
+    width:450px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 30px;
+    position: relative;
+}
+header section>div>div>input{
+    width:400px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background: transparent;   
+}
+#search-box{
+  width:450px;
+  background:#B5E2B9;
+  position:absolute;
+  top:400px;
+  display:flex;
+  gap:10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 1s;
+}
+#search-box.active{
+  clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#search-box a{
+  background:#004F23;
+  border-radius: 20px;
+  color:white;
+  padding:8px 15px;
+  font-size: 12px;
+}
+header section>div>div>input::placeholder{
+    color: white;
+    font-style: italic;
+    font-size: 16px;
+}
+header section>div>div>i{
+    position: absolute;
+    top:13px;
+}
+.s1{
+    justify-content: space-evenly;
+    position:relative;
+}
+.s1 .s1_img{
+    width:2300.23px;
+    height:1154.27px;
+    position: absolute;
+    top:-99px;
+    z-index: -999;
+}
+.ab-1{
+    gap: 20px;
+    align-items: flex-start;
+    margin: 30px;
+}
+.ab-1 a{
+    background-color: #004F23;
+    color: white;
+    box-sizing: unset;
+    padding: 20px 28px;
+    border-radius: 35px 0px 35px 35px;
+    font-size: 20px;
+    margin-top:80px;
+}
+.ab-1 p:nth-of-type(1){
+    font-size:22px;
+    color:#186038
+}
+.ab-1 h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.ab-1 p:nth-of-type(2){
+    font-size:20px;
+    line-height: 30px;
+}
+.ab-2{
+    position: relative;
+    top: 140px;
+    left:-100px
+}
+.ab-2 .circle{
+    width:440px;
+    height:440px;
+    border-radius: 50%;
+    background: url("../images/ab2.jpg")no-repeat;
+    background-size: 540px;
+    background-position: 35% 100%;
+    position: relative;
+
+}
+.cir2{
+    width:360px ;
+    height: 360px;
+    border: 4px solid #004F23;  
+    position: absolute;  
+    border-radius: 50%;
+}
+.topbox span,.btmbox span{
+    background-color: #004F23;
+    padding:10px;
+    border-radius: 20%;
+    
+}
+.topbox  p,.btmbox p{
+    text-align: center;
+}
+.topbox{
+  animation-name: movedown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.btmbox{
+  animation-name: moveup;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; 
+}
+.btmbox ,.topbox{
+    background-color: #B5E2B9;
+    position: absolute;
+    width:287px ;
+    height: 287px;
+    z-index: 9;
+    gap:40px;
+    font-size: 20px;
+    font-weight: 510;
+}
+.topbox {
+    border-radius: 99px 99px 99px 0;
+    top: -125px;
+    right: -140px;
+}
+.btmbox {
+    border-radius: 99px 0 99px 99px;
+    bottom: -125px;
+    left: -140px;
+}
+/*services*/
+#wrapper{
+    padding:450px 40px 0px 40px;
+}
+.service{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    gap:20px;
+    
+}
+.service h1{
+    text-align: center;
+}
+.service h3{
+    color:#004F23;
+    font-size: 22px;
+}
+.services{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+    gap:20px;
+    padding-top:30px; 
+}
+.element{
+    position:relative;
+   cursor:pointer
+}
+.element:hover .rotate{
+ animation-name:round;
+ animation-duration: .3s;
+ animation-timing-function: ease-in;
+}
+.element div:nth-of-type(1){
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    background:#88C38E;
+    position:absolute;
+    top:-20px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.element div:nth-of-type(1) i{
+font-size:40px;
+}
+.element div:nth-of-type(2){
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:red;
+    width:287px;
+    height:287px;
+    position:relative;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 99%, 0 75%);
+    z-index:8;
+    background :url(../images/stone-road.jpg)no-repeat;
+    background-size: cover;
+    background-position: -50px;
+    color:white
+}
+.btn{
+    background-color: #004F23;
+    color: white;
+    padding: 7px 18px;
+    border-radius: 35px 0px 35px 35px;
+    font-size: 15px;
+    text-decoration: none;
+    position:relative;
+    top:80px;
+}
+.element a:hover{
+  background:#88C38E;
+  color:black
+}
+.element div:nth-of-type(2) div:nth-of-type(1){
+    position:absolute;
+    width:287px;
+    height:287px;
+    top:0;
+    background:black;
+    border-radius: 0;
+    z-index:-1;
+    opacity:0.5
+}
+.element div:nth-of-type(3){
+    position:absolute;
+    width:90px;
+    height:90px;
+   border:2px solid #004F23;
+    top:-29px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    border-radius: 50%;
+}
+.services div:nth-of-type(2) div:nth-of-type(2){
+    background:url('../images/pexels-tom-fisk-3280078.jpg')no-repeat;
+    background-size:410px;
+    background-position: center 10px;
+    background-size: cover;
+}
+.services div:nth-of-type(3) div:nth-of-type(2){
+    background:url('../images/empty-pavilion-garden.jpg')no-repeat;
+    background-size:410px;
+    background-position: center 10px;
+}
+.services div:nth-of-type(4) div:nth-of-type(2){
+    background:url('../images/wooden-pathway-garden.jpg')no-repeat;
+    background-size:410px;
+    background-position: center 10px;
+    background-size: cover;
+}
+.services div:nth-of-type(5) div:nth-of-type(2){
+    background:url('../images/man-trimming-bough-brush-guy-works-backyard.jpg')no-repeat;
+    background-size:410px;
+    background-position: center 10px;
+    background-size: cover;
+}
+.services div:nth-of-type(6) div:nth-of-type(2){
+    background:url('../images/coins-grass.jpg')no-repeat;
+    background-size:410px;
+    background-position:30% 10px;
+}
+.services div:nth-of-type(7) div:nth-of-type(2){
+    background:url('../images/man-cutting-grass-with-lawn-mover-back-yard.jpg')no-repeat;
+    background-size:410px;
+    background-position: center 10px;
+    background-size: cover;
+}
+/*choose us*/
+.choose_us{
+    background:url('../images/path.png')no-repeat center 0%;
+    width:100%;
+    height:1000px;
+    background-size:2050px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 150px;
+  
+}
+.choose_us .left{
+    position: relative;
+    top:90px;
+}
+.choose_us .left div:nth-of-type(1) img{
+ width:429px;
+ border-radius: 40% 40% 0% 40%;
+
+}
+.choose_us .left div:nth-of-type(2){
+    position: absolute;
+    bottom:0;
+    right:-220px
+}
+.choose_us .left div:nth-of-type(2) img{
+    height:200px;
+    width:200px;
+    object-fit:cover;
+    border-radius: 40% 40% 40% 0%;
+}
+.choose_us .right{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    align-items: flex-end;
+    text-align:end;
+    position: relative;
+    top: 90px;
+}
+.choose_us .right .right-btm{
+    display: flex;
+    justify-content: space-between;
+    gap:15px;
+    align-items: center;
+
+}
+.choose_us .right .right-btm .line{
+    width:5px;
+    height:60px;
+    background:#004F23;
+}
+.choose_us .right .right-btm span>i{
+    font-size: 32px;
+    background-color: #004F23;
+    width: 65px;
+    height:60px;
+    border-radius: 0 40px 40px 40px;
+    text-align: center;
+    line-height: 60px;
+    color: aliceblue;
+}
+.down{
+    position: relative;
+    width:100%;
+  height:506px;
+}
+.down .layer1,.down .layer2,.down .layer3{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background:blue;
+    top:0;
+    z-index:-1;
+}
+.down .layer1{
+    background:url('../images/Path2.png')no-repeat;
+    background-size:1600px;
+    background-position:top ;
+}
+.down .layer2{
+    background:url('../images/Path2.png')no-repeat;
+    background-size:1600px;
+    background-position:top;
+    top:50px;
+    opacity:0.4;
+
+}
+.down .layer3{
+    background:url('../images/Path2.png')no-repeat;
+    background-size:1600px;
+    background-position:top;
+    top:90px;
+    opacity:0.2;
+}
+.down-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0 40px;
+    box-sizing: border-box;
+}
+.apps{
+    display: flex;
+    gap:20px;
+    align-items:center;
+    justify-content: flex-start;
+}
+.apps a {
+    background-color: #004F23;
+    color: white;
+    width:200px;
+    border-radius: 35px 0px 45px 35px;
+    text-decoration: none;
+    text-align: center;
+    margin-top:100px;
+    padding:8px 0px 8px 10px;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    gap:10px;
+}
+.down .down-content .down-right{
+    position:relative;
+    top:42px;
+    right: 20px;
+}
+
+
+/*meet the family*/
+.meet{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding:150px 0px;
+    position: relative;
+}
+.meet .meet-top{
+    text-align: center;
+}
+.meet .meet-middle,.meet .meet-bottom {
+    display: flex;
+    gap:20px;
+
+}
+.meet .meet-middle div, .meet .meet-bottom div{
+    width:388px;
+    height:388px;
+    position: relative;
+}
+.meet button{
+    position:relative;
+   bottom:70px;
+   left:50%;
+   transform: translateX(-50%);
+   background:#004F23;
+   border:none;
+   outline:none;
+   color:white;
+   padding:3px 60px 1px 60px;
+   border-radius:40px;
+ 
+}
+.meet button:hover{
+    background:#88C38E;
+    color:black
+}
+.meet .meet-middle button span,.meet .meet-bottom button span{
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.meet .meet-middle button span.gardenist,.meet .meet-bottom button span.gardenist{
+    position: relative;
+    top:-2px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.meet .meet-middle div img,.meet .meet-bottom div img{
+    object-fit: cover;
+    width:388px;
+    height:388px;
+}
+.meet .meet-middle div:nth-child(1) img{
+  border-radius: 120px 120px 0px 120px;
+}
+.meet .meet-bottom div:nth-child(1) img{
+    border-radius: 120px 0px 120px 120px;   
+}
+.meet .meet-middle div:nth-child(2) img{
+    border-radius: 120px 120px 120px 0px;
+  }
+  .meet .meet-bottom div:nth-child(2) img{
+    border-radius:0px 120px 120px 120px;
+  }
+  .meet .meet-middle .icon,.meet .meet-bottom .icon{
+    position: absolute;
+    top:40%;
+    right:10px;
+    display:flex;
+    flex-direction: column;
+    width:50px;
+    height:calc(100% - 50%);
+    font-size: 35px;
+    gap:20px;
+    transform: translateY(-20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .meet  .icon i{
+    background:#004F23;
+    color:white;
+    width:45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:8px;
+  }
+  .meet .icon i:hover{
+    background:#88C38E;
+    color:black
+  }
+  .meet  .icon-2{
+    left:10px;
+  }
+  #flower1,#flower2{
+    position: absolute;
+    opacity:0.2;
+  }
+  #flower1{
+    top:0;
+    right:0;
+  }
+  #flower2{
+    bottom:0;
+    left:0;
+    transform: rotate(180deg);
+  }
+/*testimonial*/
+
+  /*our activities*/
+  .active{
+    position: relative;
+    top:150px
+  }
+.active img{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    filter: brightness(50%);
+    z-index: 99;
+}
+.act{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 230px;
+    color: white;
+}
+.act .pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+}
+.pro .b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: -50px;
+  background-color: white;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  margin-right: 125px;
+}
+.pro .bc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: -50px;
+  background-color: white;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  margin-right: 115px;
+}
+.act .pro img{
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+.act p{
+    font-size: 90px;
+    font-family: Pristina;
+}
+.lett{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    position: relative;
+    bottom: 230px;
+    left: 20px;
+    color: white;
+}
+
+ /*navigation*/
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 100px; 
+    position: relative;
+    top: 120px;
+}
+#lfnavi{
+  position: relative;
+  left: 70px;
+}
+.rtnavi{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.rtnavi div p{
+    font-size: 20px;
+    background: #004F23;
+    color: white;
+    padding: 10px 30px;
+    margin: 15px 10px;
+    border-radius: 30px;
+}
+ /*contact us*/
+ #contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-top: 250px;
+
+  }
+  #contact-us .leftcon table{
+    width: 100%;
+    text-align: start;
+    border: 1px solid black;
+    width: 400px;
+    height: 450px;
+  } 
+  #contact-us .leftcon table th{
+    text-align: start;
+    font-size: 24px;
+    font-weight:450;
+    padding-left: 20px;
+    
+  } 
+  #contact-us .leftcon table td{
+    text-align: start;
+    font-size: 18px;
+    font-weight:400;
+    color: gray;
+    padding-left: 20px;
+  } 
+  #contact-us .leftcon table .pos2{
+    position: relative;
+    left: 30px;
+  }
+  #contact-us .leftcon table .pos1{
+    position: relative;
+    right: 110px;
+  }
+  #contact-us .leftcon table .pos{
+    position: relative;
+   right: 70px;
+  }
+  #contact-us .leftcon table .pos2 i{
+    position: relative;
+    right: 110px;
+    background:#004F23;
+    color:white;
+    width:45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:8px;
+    font-size: 30px;
+  }
+  #contact-us .leftcon table .pos1 i{
+    position: relative;
+    left: 15px;
+    background:#004F23;
+    color:white;
+    width:45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:8px;
+    font-size: 30px;
+    
+  }
+  #contact-us .leftcon table .pos i{
+    position: relative;
+    left: 110px;
+    background:#004F23;
+    color:white;
+    width:45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:8px;
+    font-size: 30px;
+  }
+  #contact-us .leftcon .ln{
+    width: 400px;
+    height: 0.5px;
+    background: black;
+    position: relative;
+    top: 95px;
+  }
+  #contact-us .leftcon .ln1{
+    width: 400px;
+    height: 0.5px;
+    background: black;
+    position: relative;
+    top: 220px;
+  }
+  #contact-us .leftcon .ln2{
+    width: 400px;
+    height: 0.5px;
+    background: black;
+    position: relative;
+    top: 315px;
+  }
+  
+  #contact-us form {
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+  }
+  #contact-us form textarea,#contact-us form select{
+  padding:30px;
+  border-radius: 30px;
+  border: 1px solid black;
+  }
+  #contact-us form input{
+  width:49%;
+  padding:10px;
+  border-radius: 30px;
+  border: 1px solid black;
+  }
+  .rightcon .gb{
+  width: 150px;
+  height: 6px;
+  background: #004F23;
+  position: relative;
+  bottom: 10px;
+  }
+  #contact-us form .subm input:nth-last-of-type(1){
+  background: #004F23;
+  color: white;
+  border-radius: 30px 0px 30px 30px;
+  border: none;
+  }
+
+    /*footer*/
+  footer{
+    background:url(../images/fooo.png)no-repeat -360px 110px;
+    background-size: 2100px;
+    margin-top:100px;
+    width:100%;
+    height: 1000px;
+    position: relative;
+    overflow-x:hidden;
+  }
+  footer .footer1,footer .footer2{
+    position: absolute;
+  }
+  footer .footer1{
+    background:url(../images/footer.png)no-repeat  center 400px;
+    background-size: 1950px;
+    width:100%;
+    height: 100%;
+  }
+  footer .footer2{
+    width:100%;
+    height: 100%;
+  }
+  footer .footer2 .f-1,footer .footer2 .f-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+  }
+  footer .footer2 .f-2{
+position: relative;
+top:200px;
+right:-80px;
+gap:100px
+  }
+  footer .footer2 h1{
+    font-weight: 600;
+  }
+  footer .footer2 .f-1-a,footer .footer2 .f-1-b{
+    width:388px;
+    height:235px;
+    background:#004F23;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    padding:20px;
+    gap:60px;
+  }
+  footer .footer2 .f-3 .f-3-a form .check{
+   display: flex;
+   padding-top:10px;
+   align-items: center;
+   justify-content: center;
+   gap:10px
+  }
+  footer .footer2 .f-3 .f-3-a form .check input{
+    width:20px;
+    height:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  footer .footer2 .f-3 .f-3-a form button{
+    position: relative;
+    right:30px;
+    background-color: transparent;
+    border:none;
+    font-size: 20px;
+  }
+  footer .footer2 .f-3 .f-3-a form .check input{
+    font-size: 100px;
+  }
+  footer .footer2 .f-3 .f-3-a form input[type='text']{
+    padding: 8px 8px;
+    margin:15px 0px;
+    width: 300px;
+    border-radius: 40px 0px 60px 40px;
+    border:none;
+    outline:none;
+  }
+  footer .footer2 .f-1-b{
+    background:#88C38E;
+    color:black;
+  }
+  footer .footer2 .f-1-a button,footer .footer2 .f-1-b button{
+    padding:5px 20px;
+    border-radius: 15px;
+    border:none;
+   
+  }
+  footer .footer2 .f-1-b button{
+    padding:8px 22px;
+    background-color:#004F23;
+    color:white;
+    border-radius: 25px;
+    border:none;
+  }
+  footer .footer2 .f-3{
+ position: relative;
+ top:400px;
+  }
+  footer .footer2 .f-3 .f-3-a{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  footer .footer2 .f-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 60px 0px 60px;
+  }
+  footer .footer2 .f-3 .linkk{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    left: 510px;
+    gap:8px;
+    padding-top: 40px;
+  }
+  footer .footer2 .f-3 .linkk a{
+    text-decoration: none;
+    color: black;
+  }
+  footer .footer2 .f-3 .linkk h3{
+    position: absolute;
+    top: 1px;
+  }
+  footer .footer2 .f-3 address{
+    position: absolute;
+    left: 700px; 
+    font-style: normal;
+    padding-top: 20px;
+  }
+  footer .footer2 .f-3 address h3{
+    position: absolute;
+    top: -20px;
+  }
+footer .hr{
+  width: 100%;
+  height: 1px;
+  border-top:1px solid black;
+  position: relative;
+  top:450px;
+}
+  footer .foot div:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    position: absolute;
+    bottom:8px;
+    left: 120px;
+  }
+  footer .foot div:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    position: absolute;
+    bottom:8px;
+    left: 1000px;
+  }
+ /*footer*/
+
+ /*animation*/
+
+ @keyframes movedown{
+  0%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform:translateY(30px)
+  }
+ }
+ @keyframes moveup{
+  0%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform:translateY(-30px)
+  }
+ }
+ @keyframes round{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+ }

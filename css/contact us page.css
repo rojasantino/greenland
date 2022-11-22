@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:sans-serif;
+    font-weight: 500;
+}
+body{
+  overflow-x:hidden
+}
+.logo{
+    width: 159px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.padding{
+    padding: 20px;
+}
+.btn{
+    background-color: #004F23;
+    color: white;
+    box-sizing: unset;
+    padding: 12px 28px;
+    border-radius: 35px 0px 35px 35px;
+    font-size: 23px;
+}
+nav.row{
+    flex-direction: row-reverse;
+    justify-content:flex-start;
+    gap: 30px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top:0;
+    padding-right:40px ;
+}
+header{
+    position: relative;
+}
+nav a{
+    font-size: 20px;
+    color: black;
+}
+header div h1{
+  position: absolute;
+  top: 140px;
+  left: 200px;
+  font-size: 45px;
+  -webkit-text-stroke: 1px black;
+  color:transparent
+}
+header section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*contact us*/
+#contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 100px;
+
+  }
+  #contact-us .leftcon table{
+    width: 100%;
+    text-align: start;
+    border: 1px solid black;
+    width: 400px;
+    height: 450px;
+  } 
+  #contact-us .leftcon table th{
+    text-align: start;
+    font-size: 24px;
+    font-weight:450;
+    padding-left: 20px;
+    
+  } 
+  #contact-us .leftcon table td{
+    text-align: start;
+    font-size: 18px;
+    font-weight:400;
+    color: gray;
+    padding-left: 20px;
+  } 
+  #contact-us .leftcon table .pos2{
+    position: relative;
+    left: 30px;
+  }
+  #contact-us .leftcon table .pos1{
+    position: relative;
+    right: 110px;
+  }
+  #contact-us .leftcon table .pos{
+    position: relative;
+   right: 70px;
+  }
+  #contact-us .leftcon table .pos2 i{
+    position: relative;
+    right: 110px;
+    background:#004F23;
+    color:white;
+    width:45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:8px;
+    font-size: 30px;
+  }
+  #contact-us .leftcon table .pos1 i{
+    position: relative;
+    background:#004F23;
+    color:white;
+    width:45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:8px;
+    font-size: 30px;
+    
+  }
+  #contact-us .leftcon table .pos i{
+    position: relative;
+    left: 130px;
+    background:#004F23;
+    color:white;
+    width:45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:8px;
+    font-size: 30px;
+  }
+  #contact-us .leftcon .ln{
+    width: 400px;
+    height: 0.5px;
+    background: black;
+    position: relative;
+    top: 100px;
+  }
+  #contact-us .leftcon .ln1{
+    width: 400px;
+    height: 0.5px;
+    background: black;
+    position: relative;
+    top: 225px;
+  }
+  #contact-us .leftcon .ln2{
+    width: 400px;
+    height: 0.5px;
+    background: black;
+    position: relative;
+    top: 315px;
+  }
+  
+  #contact-us form {
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+  }
+  #contact-us form textarea,#contact-us form select{
+  padding:30px;
+  border-radius: 30px;
+  border: 1px solid black;
+  }
+  #contact-us form input{
+  width:49%;
+  padding:10px;
+  border-radius: 30px;
+  border: 1px solid black;
+  }
+  .rightcon .gb{
+  width: 150px;
+  height: 6px;
+  background: #004F23;
+  position: relative;
+  bottom: 10px;
+  }
+  #contact-us form .subm input:nth-last-of-type(1){
+  background: #004F23;
+  color: white;
+  border-radius: 30px 0px 30px 30px;
+  border: none;
+  }
+
+
+/*need a gardener*/
+.need{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.need img{
+    width: 750px;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    z-index: -99;
+}
+.need div:nth-child(2){
+    clip-path: polygon(0 0, 58% 0, 100% 100%, 38% 100%);
+    background: #004F23;
+    width: 40px;
+    height: 200px;
+    position: absolute;
+    left: 675px;
+    
+}
+.need div:nth-child(3){
+    background: #B5E2B9;
+    width: 850px;
+    height: 200px;
+    z-index: -1;
+    position: absolute;
+    left: 700px;
+}
+.need h1{
+    position: absolute;
+    left: 130px;
+    top:30px
+}
+.need a button{
+    background-color: #004F23;
+    font-size: 20px;
+    color: white;
+    padding: 8px 25px 8px 25px;
+    position: absolute;
+    left: 500px;
+    border-radius: 50px 0px 50px 50px;
+    top: 120px;
+    border: none;
+}
+  /*footer*/
+  footer{
+    background:url(../images/fooo.png)no-repeat -360px 110px;
+    background-size: 2050px;
+    margin-top:100px;
+    width:100%;
+    height: 1000px;
+    position: relative;
+    overflow-x:hidden;
+  }
+  footer .footer1,footer .footer2{
+    position: absolute;
+  }
+  footer .footer1{
+    background:url(../images/footer.png)no-repeat  center 400px;
+    background-size: 2000px;
+    width:100%;
+    height: 100%;
+  }
+  footer .footer2{
+    width:100%;
+    height: 100%;
+  }
+  footer .footer2 .f-1,footer .footer2 .f-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+  }
+  footer .footer2 .f-2{
+position: relative;
+top:190px;
+right:-53px;
+gap:120px
+  }
+  footer .footer2 h1{
+    font-weight: 600;
+  }
+  footer .footer2 .f-1-a,footer .footer2 .f-1-b{
+    width:388px;
+    height:235px;
+    background:#004F23;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    padding:20px;
+    gap:60px;
+  }
+  footer .footer2 .f-3 .f-3-a form .check{
+   display: flex;
+   padding-top:10px;
+   align-items: center;
+   justify-content: center;
+   gap:10px
+  }
+  footer .footer2 .f-3 .f-3-a form .check input{
+    width:20px;
+    height:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  footer .footer2 .f-3 .f-3-a form button{
+    position: relative;
+    right:30px;
+    background-color: transparent;
+    border:none;
+    font-size: 20px;
+  }
+  footer .footer2 .f-3 .f-3-a form .check input{
+    font-size: 100px;
+  }
+  footer .footer2 .f-3 .f-3-a form input[type='text']{
+    padding: 8px 8px;
+    margin:15px 0px;
+    width: 300px;
+    border-radius: 40px 0px 60px 40px;
+    border:none;
+    outline:none;
+  }
+  footer .footer2 .f-1-b{
+    background:rgb(136, 195, 142);
+    color:black;
+  }
+  footer .footer2 .f-1-a button,footer .footer2 .f-1-b button{
+    padding:5px 20px;
+    border-radius: 15px;
+    border:none;
+   
+  }
+  footer .footer2 .f-1-b button{
+    padding:8px 22px;
+    background-color:#004F23;
+    color:white;
+    border-radius: 25px;
+    border:none;
+  }
+  footer .footer2 .f-3{
+ position: relative;
+ top:410px;
+  }
+  footer .footer2 .f-3 .f-3-a{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  footer .footer2 .f-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 60px 0px 60px;
+  }
+  footer .footer2 .f-3 .linkk{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    left: 510px;
+    gap:8px;
+    padding-top: 40px;
+  }
+  footer .footer2 .f-3 .linkk a{
+    text-decoration: none;
+    color: black;
+  }
+  footer .footer2 .f-3 .linkk h3{
+    position: absolute;
+    top: 1px;
+  }
+  footer .footer2 .f-3 address{
+    position: absolute;
+    left: 700px; 
+    font-style: normal;
+    padding-top: 20px;
+  }
+  footer .footer2 .f-3 address h3{
+    position: absolute;
+    top: -30px;
+  }
+footer .hr{
+  width: 100%;
+  height: 1px;
+  border-top:1px solid black;
+  position: relative;
+  top:450px;
+}
+  footer .foot div:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    position: absolute;
+    bottom:8px;
+    left: 120px;
+   
+  }
+  footer .foot p{
+    font-weight: 400;
+  }
+  footer .foot div:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    position: absolute;
+    bottom:8px;
+    left: 1000px;
+  }
+ /*footer*/
